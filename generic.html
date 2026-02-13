@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Generic - Phantom by HTML5 UP</title>
+		<title>4x4 Sequential Multiplier</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -19,11 +19,6 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="inner">
-
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
-								</a>
 
 							<!-- Nav -->
 								<nav>
@@ -49,13 +44,44 @@
 
 				<!-- Main -->
 					<div id="main">
-						<div class="inner">
-							<h1>Generic Page</h1>
-							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel venenatis mauris vehicula hendrerit.</p>
-							<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
-						</div>
+						<section id="one">
+							<div class="inner">
+								<h1>Overview</h1>
+								<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
+								<p>This was the final project completed for ECE 3561 - Advanced Digital Design. Using AMD's Xilinx software, this design implements a 4x4 sequential multiplier circuit in VHDL.
+								The circuit takes in two 4-bit binary numbers and multiplies them to produce an 8-bit result as well as a carry bit. Key components of the design include two 4-bit shift registers, 
+								a counter, a full-adder, a system controller, and a custom 9-bit shift register.
+								</p>
+							</div>
+						</section>
+						<section id="two" class="spotlights">
+							<section>
+								<a class="image" href="">
+								<div class="content">
+									<div class="inner">
+										<header class="major">
+											<h3>Design</h3>
+										</header>
+										<p>The multiplier design used two 4-bit shift registers to store inputs, a 9-bit custom shift register for the intermediate results, and a 4-bit counter to control iteration. 
+										   The system controller managed data flow and computation timing, while the full adder computed partial products iteratively.
+										</p>
+									</div>
+								</div>
+							</section>
+							<section>
+								<a class="image" href="">
+								<div class="content">
+									<div class="inner">
+										<header class="major">
+											<h3>Simulation</h3>
+										</header>
+										<p>Verified functionality using ISim simulation software. The circuit produced accurate results for a range of test cases, confirming the correct implementation of sequential 
+										   multiplication.
+										</p>
+									</div>
+								</div>
+							</section>
+						</section>
 					</div>
 
 				<!-- Footer -->
@@ -109,4 +135,5 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+
 </html>
